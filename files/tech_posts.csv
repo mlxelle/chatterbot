@@ -1,0 +1,90 @@
+tech,2024-01-01,Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+tech,2024-01-02,Debugging is twice as hard as writing the code in the first place.
+tech,2024-01-03,The best code is no code at all.
+tech,2024-01-04,Premature optimization is the root of all evil.
+tech,2024-01-05,Make it work, make it right, make it fast.
+tech,2024-01-06,A program that produces incorrect results twice as fast is infinitely slower.
+tech,2024-01-07,The function of good software is to make the complex appear simple.
+tech,2024-01-08,First, solve the problem. Then, write the code.
+tech,2024-01-09,Code never lies. Comments sometimes do.
+tech,2024-01-10,Software is like entropy. It is difficult to grasp, weighs nothing, and obeys the second law of thermodynamics.
+tech,2024-01-11,Good software is written for humans first and computers second.
+tech,2024-01-12,Testing shows the presence of bugs, not their absence.
+tech,2024-01-13,Write programs that do one thing and do it well.
+tech,2024-01-14,The most important skill a programmer can have is knowing which problems are hard.
+tech,2024-01-15,Copying code from the internet makes you a programmer. Understanding what you copied makes you a developer.
+tech,2024-01-16,The best way to get a project done faster is to start sooner.
+tech,2024-01-17,A good programmer looks both ways before crossing a one-way street.
+tech,2024-01-18,Programs must be written for people to read, and only incidentally for machines to execute.
+tech,2024-01-19,Talk is cheap. Show me the code.
+tech,2024-01-20,The best debugger ever made is a good night's sleep.
+tech,2024-01-21,If debugging is the process of removing bugs, then programming must be the process of putting them in.
+tech,2024-01-22,It always takes longer than you expect, even when you take into account Hofstadter's Law.
+tech,2024-01-23,There are only two hard things in computer science: cache invalidation and naming things.
+tech,2024-01-24,Software is never finished, only abandoned.
+tech,2024-01-25,The most dangerous phrase in software development is: we have always done it this way.
+tech,2024-01-26,An API that isn't designed is worse than no API at all.
+tech,2024-01-27,Clean code always looks like it was written by someone who cares.
+tech,2024-01-28,You don't refactor because you need to. You refactor because the code tells you to.
+tech,2024-01-29,The best feature is the one you don't have to build.
+tech,2024-01-30,Simple is better than complex. Complex is better than complicated.
+tech,2024-01-31,Readability counts more than cleverness.
+tech,2024-02-01,Every line of code is a liability until proven otherwise.
+tech,2024-02-02,Architecture is the decisions that you wish you could get right early in the project.
+tech,2024-02-03,A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable.
+tech,2024-02-04,The cloud is just someone else's computer.
+tech,2024-02-05,Data is the new oil, and like oil, it's most useful when refined.
+tech,2024-02-06,A good algorithm is like a poem. It expresses a complex idea with elegant simplicity.
+tech,2024-02-07,Version control is like a time machine for your code, but only if you write good commit messages.
+tech,2024-02-08,The fastest algorithm is the one that never runs.
+tech,2024-02-09,Your tests are your documentation. Your code is the implementation.
+tech,2024-02-10,Software architecture is not a phase. It is a continuous practice.
+tech,2024-02-11,The goal of software engineering is to deliver working software that solves real problems.
+tech,2024-02-12,Code review is not about catching bugs. It is about sharing knowledge.
+tech,2024-02-13,A function should do one thing, do it well, and do it only.
+tech,2024-02-14,The best code review is the one you do before you submit the pull request.
+tech,2024-02-15,Naming a variable is the hardest part of programming.
+tech,2024-02-16,Every new technology is tomorrow's legacy code.
+tech,2024-02-17,Build systems that fail loudly rather than silently.
+tech,2024-02-18,Good software respects the user's time, attention, and intelligence.
+tech,2024-02-19,A bug in production is worth a thousand bugs in development.
+tech,2024-02-20,The purpose of abstraction is not to be vague but to create a new semantic level of precision.
+tech,2024-02-21,Designing software is easy. Designing the right software is hard.
+tech,2024-02-22,An interface is a contract between the code that provides a service and the code that uses it.
+tech,2024-02-23,Dependencies are technical debt waiting to happen.
+tech,2024-02-24,Don't optimize early. First make it work, then measure, then optimize what the data tells you to.
+tech,2024-02-25,The measure of a good engineer is not how fast they can write code but how fast they can understand code.
+tech,2024-02-26,Complexity is the enemy of reliability.
+tech,2024-02-27,Write the tests you wish you had before you start writing the code.
+tech,2024-02-28,A compiler is just a program that reads one program and writes another.
+tech,2024-02-29,Software that is easy to change is more valuable than software that is hard to understand.
+tech,2024-03-01,The best software engineers spend more time reading code than writing it.
+tech,2024-03-02,Errors are not just bugs. They are information about the gap between your model and reality.
+tech,2024-03-03,A good data structure will outlive a good algorithm every time.
+tech,2024-03-04,The goal of refactoring is not to improve the code. It is to make the next change easier.
+tech,2024-03-05,Every system eventually becomes the one thing it was designed to replace.
+tech,2024-03-06,Security is not a feature. It is a property of the whole system.
+tech,2024-03-07,Performance is a feature. So is simplicity. So is maintainability. Choose your trade-offs wisely.
+tech,2024-03-08,The worst software design is the one that made sense only to the person who wrote it.
+tech,2024-03-09,A good API makes the easy things easy and the hard things possible.
+tech,2024-03-10,Concurrency makes easy programs hard and hard programs impossible.
+tech,2024-03-11,An engineer who can explain their system to a non-engineer is twice as valuable.
+tech,2024-03-12,The test suite is the living specification of the software.
+tech,2024-03-13,If you can't explain it simply, you don't understand it well enough.
+tech,2024-03-14,Separation of concerns is the most powerful design principle in all of software.
+tech,2024-03-15,Good engineers delete more code than they write.
+tech,2024-03-16,The only way to write reliable software is to keep it simple.
+tech,2024-03-17,Every abstraction leaks at the seams. Know where the seams are.
+tech,2024-03-18,Code that is easy to test is almost always good code.
+tech,2024-03-19,A software system is never done. It is only released.
+tech,2024-03-20,The right tool for the right job is a virtue in engineering.
+tech,2024-03-21,Build to learn, then build to scale.
+tech,2024-03-22,Good software systems grow from simple systems that work.
+tech,2024-03-23,Technical debt is a loan you take out against future productivity.
+tech,2024-03-24,A well-named variable is a comment that cannot go stale.
+tech,2024-03-25,The most important line in any program is the one that handles the error you forgot to think about.
+tech,2024-03-26,Logging is the voice of a system that cannot speak for itself.
+tech,2024-03-27,In software development, the only constant is change.
+tech,2024-03-28,A deployment pipeline is not a luxury. It is a prerequisite to moving fast safely.
+tech,2024-03-29,Monitoring is how you know your software is doing what you think it is.
+tech,2024-03-30,The best systems documentation is working code with clear tests.

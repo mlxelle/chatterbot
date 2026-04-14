@@ -1,0 +1,6 @@
+rando1,rando2,rando3,A tweet lives in this line. . . .  12345678910.  Banana.  Despicable Me 2 coming out in theaters soon!
+rando1,rando2,rando3,Banana. @foo
+rando1,rando2,rando3,I will go to the zoo.  There I http://www.cis.upenn.edu/~cis1200 will be happy.
+rando1,rando2,rando3,https://www.thisIsAnInvalidTweetAndWillNotBeIncludedInTheOutputOfParseCsvSentences.com
+rando1,rando2,rando3,"This tweet contains a , in quotes."
+rando1,rando2,rando3,can't won't didn't
