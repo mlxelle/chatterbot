@@ -9,12 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 /** Tests for MarkovChain */
 public class MarkovChainTest {
 
-    /*
-     * Writing tests for Markov Chain can be a little tricky.
-     * We provide a few tests below to help you out, but you still need
-     * to write your own.
-     */
-
     /**
      * Helper function to make it easier to create singleton sets of Strings;
      * use this function in your tests as needed.
@@ -28,14 +22,11 @@ public class MarkovChainTest {
         return set;
     }
 
-    /* **** ****** ***** ***** EXAMPLE POSTS ***** ***** ****** **** */
-
     /*
-     * Test your MarkovChain implementation!
-     * Run this test case and check the printed results to see whether
-     * your MarkovChain training agrees with the output below.
+     * ILLUSTRATIVE EXAMPLE MARKOV CHAIN trained on:
+     *   "a table and a chair"
+     *   "a banana! and a banana?"
      *
-     * ILLUSTRATIVE EXAMPLE MARKOV CHAIN:
      * startTokens: { "a":2 }
      * bigramFrequencies:
      * "!": { "and":1 }
@@ -45,9 +36,6 @@ public class MarkovChainTest {
      * "banana": { "!":1 "?":1 }
      * "chair": { "<END>":1 }
      * "table": { "and":1 }
-     *
-     * We have started this test case for you. Add additional code to the test case
-     * to completely characterize the state of the MarkovChain.
      */
     @Test
     public void testIllustrativeExampleMarkovChain() {
@@ -84,7 +72,6 @@ public class MarkovChainTest {
         assertEquals(1, pdA.count("chair"));
         assertEquals(1, pdA.count("table"));
 
-        // TODO: Add more assertions to this test case to fully characterize state of mc
         ProbabilityDistribution<String> pdAnd = mc.get("and");
         assertEquals(singleton("a"), pdAnd.keySet());
         assertEquals(2, pdAnd.count("a"));
@@ -106,9 +93,8 @@ public class MarkovChainTest {
         assertEquals(1, pdTable.count("and"));
     }
 
-    /* **** ****** **** **** ADD BIGRAMS TESTS **** **** ****** **** */
+    // addBigram tests
 
-    /* Here's an example test case. Be sure to add your own as well */
     @Test
     public void testAddBigram() {
         MarkovChain mc = new MarkovChain();
@@ -142,9 +128,8 @@ public class MarkovChainTest {
         assertEquals(1, mc.bigramFrequencies.get("a").count("c"));
     }
 
-    /* ***** ****** ***** ***** ADD SEQUENCE TESTS ***** ***** ****** ***** */
+    // addSequence tests
 
-    /* Here's an example test case. Be sure to add your own as well */
     @Test
     public void testAddSequence() {
         MarkovChain mc = new MarkovChain();
@@ -195,30 +180,25 @@ public class MarkovChainTest {
         assertEquals(2, mc.startTokens.count("hello"));
     }
 
-    /* **** ****** ****** MARKOV CHAIN CLASS TESTS ***** ****** ***** */
+    // getWalk / walk tests
 
-    /*
-     * Here's an example test case for walking through the Markov Chain.
-     * Be sure to add your own as well
-     */
     @Test
     public void testWalk() {
         /*
-         * Using the training data "CIS 1200 rocks" and "CIS 1200 beats CIS 1600",
-         * we're going to put some bigrams into the Markov Chain.
+         * Using the training data "the cat sat" and "the cat ate the rat",
+         * we put some bigrams into the Markov Chain.
          *
          * The given sequence of numbers acts as a path through the Markov Model
          * that should be followed by {@code walk}. Note that the sequence
          * includes a choice for {@code END_TOKEN}, so the length is one longer
          * than the {@code expectedTokens}.
-         *
          */
 
-        String[] expectedTokens = { "CIS", "1200", "beats", "CIS", "1200", "rocks" };
+        String[] expectedTokens = { "the", "cat", "ate", "the", "cat", "sat" };
         MarkovChain mc = new MarkovChain();
 
-        String sentence1 = "CIS 1200 rocks";
-        String sentence2 = "CIS 1200 beats CIS 1600";
+        String sentence1 = "the cat sat";
+        String sentence2 = "the cat ate the rat";
         mc.addSequence(Arrays.stream(sentence1.split(" ")).iterator());
         mc.addSequence(Arrays.stream(sentence2.split(" ")).iterator());
 
@@ -226,6 +206,7 @@ public class MarkovChainTest {
         // point
         System.out.println(mc);
 
+        // seq drives the walk: start→the, the→cat, cat→ate, ate→the, the→cat, cat→sat, sat→END
         Integer[] seq = { 0, 0, 0, 0, 0, 1, 0 };
         List<Integer> choices = Arrays.asList(seq);
 
@@ -244,13 +225,13 @@ public class MarkovChainTest {
 
     @Test
     public void testWalk2() {
-        /* We can also use the provided method */
+        /* Uses findWalkChoices to derive the number sequence for a given path */
 
-        String[] expectedWords = { "CIS", "1600" };
+        String[] expectedWords = { "the", "rat" };
         MarkovChain mc = new MarkovChain();
 
-        String sentence1 = "CIS 1200 rocks";
-        String sentence2 = "CIS 1200 beats CIS 1600";
+        String sentence1 = "the cat sat";
+        String sentence2 = "the cat ate the rat";
         mc.addSequence(Arrays.stream(sentence1.split(" ")).iterator());
         mc.addSequence(Arrays.stream(sentence2.split(" ")).iterator());
 

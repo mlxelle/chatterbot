@@ -143,8 +143,6 @@ public class MarkovChain {
      * recording it in the appropriate probability distribution
      * of {@code bigramFrequencies}. (If this is the first time that {@code first}
      * has appeared in a bigram, creates a new probability distribution first.)
-     * You may assume that the two Strings in the bigram are tokens
-     * that have been produced by PostParser.
      *
      * @param first  The first token of the Bigram (should not be null)
      * @param second The second token of the Bigram (should not be null)

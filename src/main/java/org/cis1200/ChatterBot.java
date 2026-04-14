@@ -6,9 +6,7 @@ import java.util.Iterator;
 
 public class ChatterBot {
 
-    /**
-     * The MarkovChain you'll be using to generate posts
-     */
+    /** The MarkovChain used for post generation */
     private final MarkovChain mc;
 
     /**
@@ -38,12 +36,6 @@ public class ChatterBot {
      * They would be concatenated with spaces (except before the "!" and at the end)
      * to
      * produce the post: {@code "a banana! and a chair"}.
-     * <p>
-     * <b>NOTE:</b> The {@link StringBuilder} class provides a useful way to append
-     * {@code String}s and the method {@link String#matches(String)} can be used
-     * with
-     * {@link PostParser#PUNCTUATION_TOKEN} to determine whether a token is
-     * punctuation.
      *
      * @param ng a source of numbers for walking through the ChatterBot's
      *           MarkovChain
