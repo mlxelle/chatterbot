@@ -10,39 +10,6 @@ import java.util.*;
  * which picks from among the choices of tokens according to their
  * probability distributions.
  * <p>
- * For example, given
- *
- * <pre>
- *  ILLUSTRATIVE EXAMPLE MARKOV CHAIN:
- *  startTokens: { "a":2 }
- *  bigramFrequencies:
- *  "!":    { "and":1 }
- *  "?":    { "&lt;END&gt;":1 }
- *  "a":    { "banana":2  "chair":1  "table":1 }
- *  "and":  { "a":2 }
- *  "banana":   { "!":1  "?":1 }
- *  "chair":    { "&lt;END&gt;":1 }
- *  "table":    { "and":1 }
- * </pre>
- * <p>
- * The sequence of numbers 0 2 0 determines the (valid) walk consisting of the
- * three tokens
- * "a", "chair", and {@code END_TOKEN} as follows:
- * <ul>
- * <li>The first 0 picks out "a" from among the {@code startTokens}. (Since "a"
- * occurred
- * with frequency 2, either 0 or 1 would yield "a".)
- * <li>Next, the 2, picks out "chair" from the probability distribution over
- * bigrams
- * associated with "a" (0-1 map to "banana", 2 maps to "chair", and 3 maps to
- * "table").
- * <li>Finally, the last 0 picks out {@code END_TOKEN} from the bigrams
- * associated with
- * "chair".
- * </ul>
- * See the documentation for {@code pick} in
- * {@link ProbabilityDistribution#pick(int)}
- * for more details.
  */
 class MarkovChainIterator implements Iterator<String> {
 
