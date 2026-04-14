@@ -4,9 +4,7 @@ import java.util.*;
 
 /**
  * A Markov Chain is a data structure that tracks the frequency with which one
- * token follows another token in a collection of sequences. (Recall that a
- * "token" is a nonempty String produced by PostParser containing either a
- * word or punctuation.)
+ * token follows another token in a collection of sequences. 
  *
  * This project uses a Markov Chain to model posts by gathering the frequency
  * information from a chat feed. The MarkovChain generates "plausible"
